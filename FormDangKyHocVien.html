@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng Ký Học Viên</title>
+    <style>
+        table{font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            background-color:rgb(255, 249, 193);
+            color: blue;
+        }
+        th{background-color: rgb(191, 255, 220);
+        text-align: left;
+        font-size: large;}
+        td{padding-right: 100px;
+            padding-bottom: 10px;
+        vertical-align: top}
+        .soo{color: black;}
+        td:nth-child(even){padding-right: 200px
+        }
+    </style>
+</head>
+<body>
+    
+        <form method="get" action="FormDangKyHocVien.html" >
+            <fieldset>
+            
+            <table >
+            <tr>
+                <th colspan="3">ĐĂNG KÝ HỌC VIÊN</th>            
+            </tr>
+            <tr>
+                <td><label for="fullname" >Họ và tên</label></td>
+                <td><input type = "text" name="fullname" size="30"/></td>
+            </tr>
+            <tr>
+                <td><label for="birthday">Ngày sinh</label></td>
+                <td><input type="date" name="birthday" placeholder="DD-MM-YYYY" value=""
+                    min="1970-01-01" max="2021-12-31">
+            </td>
+            </tr>
+           <tr>
+            <td><label for="gender">Giới tính</label></td>
+            <td class="soo"><input type="radio" name="gender" value="Male">Nam
+                <input type="radio" name="gender" value="Female">Nữ
+            </td>
+           </tr>
+           <tr>
+            <td><label for="address">Địa chỉ</label></td>
+            <td><textarea rows="3" cols="25">
+
+            </textarea>
+            </td>
+           </tr>
+
+           <tr>
+            <td><label for="class">Lớp</label></td>
+            <td><select>
+                <option value=" " disabled selected hidden>-Chọn lớp-</option>
+                <option value="Front-end">Front-end</option>
+                <option value="Back-end">Back-end</option>
+                <option value="MobileApp">Mobile app</option>
+                <option value="QC">Quality Control</option>
+            </select>
+            </td>
+           </tr>
+    
+           <tr>
+            <td><label for="email">Email</label></td>
+            <td><input type = "email" name="email"/></td>
+           </tr>
+
+           <tr>
+               
+            <td><label for="phone">Điện thoại</label></td>
+            <td><input type = "number" name="phone"/></td>
+           </tr>
+            <tr>
+                <td> </td>
+                <td ><input type="submit" name="SubmitForm" value="Đăng ký">
+                    <input type="reset" value="Nhập lại"></td>
+            </tr>
+            </table>
+                
+        
+        </fieldset>
+
+    
+</body>
+</html>

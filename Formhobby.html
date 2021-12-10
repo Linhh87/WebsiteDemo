@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sở Thích</title>
+    <style>
+        .woo{color: orangered;
+            padding-right: 50px
+        }
+        table{font-family:'Calibri', Times, serif;
+            border: 10px solid rgb(127, 225, 255);            
+        }
+        label {color: blue;
+        }
+        th{ font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+            color: white;
+            background-color: orangered;
+        }
+        .gome{padding-right: 10px;
+            padding-left: 50px;
+        padding-bottom: 10px;}
+        td:nth-child(even){padding-bottom: 10px;}
+        </style>
+</head>
+<body>
+    
+    <form method="get" action="Formhobby.html" >
+        <fieldset>
+        
+        <table >
+        <tr>
+            <th colspan="4">SỞ THÍCH CỦA BẠN</th>            
+        </tr>
+        <tr>
+            <td align="right" class="gome"><label for="yourname">Họ và tên</label></td>
+            <td colspan="3"><input type = "text" name="yourname" size="25" /></td>
+        </tr>
+        <tr>
+            <td align="right" class="gome"><label for="email">Email</label></td>
+            <td colspan="3"><input type = "text" name="email" size="20"/><br></td>
+        </tr>
+        <tr>
+            <td valign="top" align="right" class="gome"><label for="hobby">Sở thích</label></td>
+            <td class="woo">
+                <input type="checkbox" name="hobby" value="Thể thao">Thể thao<br>
+                <input type="checkbox" name="hobby" value="Lướt web">Lướt web<br>
+                <input type="checkbox" name="hobby" value="Du lịch">Du lịch </td>
+            <td valign="top" class="woo">
+                <input type="checkbox" name="hobby" value="Âm nhạc">Âm nhạc<br>
+                <input type="checkbox" name="hobby" value="Chơi game">Chơi game</td>
+            <td valign="top" class="woo">
+                <input type="checkbox" name="hobby" value="Đọc sách">Đọc sách<br>
+                <input type="checkbox" name="hobby" value="Điện ảnh">Điện ảnh</td>    
+        </tr>
+
+        <tr>
+            <td> </td>
+            <td colspan="3"><input type="submit" name="SubmitForm" value="Gửi thông tin">
+                <input type="reset" value="Nhập lại"></td>
+        </tr>
+        </table>
+            
+    
+    </fieldset>
+</body>
+</html>
